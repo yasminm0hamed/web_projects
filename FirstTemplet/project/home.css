@@ -1,0 +1,377 @@
+
+nav {
+    width: 100%;
+    height:5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;margin-top: 2%;
+}
+.logo{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo1{
+  width: 3px;
+  height:40px;
+  background-color:var(--logo1-color) ;
+  margin-right: 3px;
+}
+
+.logo2{
+  width: 40px;
+  height:40px;
+  border:solid 4px var(--main-color) ;
+  border-radius: 50%;
+}
+
+.minue{
+   display: flex;
+   flex-direction: column;
+   direction: rtl;
+   justify-content: center;
+}
+
+.minue div{
+    width: 50px;
+    height: 2px;
+    margin-bottom: 10px;
+    background-color: var(--logo1-color);
+}
+.minue .no-margin{
+    margin-bottom: 0;
+}
+
+.minue .shorter{
+    width: 35px;
+}
+
+.container1{
+    background-image: url(Bake_background.jpg);
+    background-size:cover ;
+    height: 40%;
+    text-transform: capitalize;
+    
+}
+ .container1 h1{
+    text-align: center;
+    padding-top: 7%;
+    color: var(--main-color);
+    
+ }
+ .container1 p{
+    text-align: center;
+    color: var(--logo1-color);
+ }
+
+ .container2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10%;
+    margin:5% 5%;
+    text-align: center;
+ }
+
+ .container2 div{
+    background-color: var(--background-color);
+    border-radius: 5%;
+    color: var(--logo1-color);
+    padding:5%;
+    box-shadow: 0 0 10px  10px var(--logo1-color);
+    margin-bottom: 7%;
+ }
+
+ div i{
+    font-size: 40px;
+ }
+
+ .container3 ,
+ .container5 ,
+ .container6 ,
+ .container7 {
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+   margin-bottom: 10%;
+   
+ }
+
+ .container3 h1,
+ .container5 h1,
+ .container6 h1,
+ .container7 h1{
+    font-size:120px;
+    text-align: center;
+    font-weight: 900;
+    color:var(--shadow-color2);
+    margin-bottom: 0;
+    position: relative;
+
+ }
+
+ .container3 h1::before,
+ .container5 h1::before,
+ .container6 h1::before,
+ .container7 h1::before{
+    color: var(--logo1-color);
+    font-size: 15%;
+    font-weight:400;
+    position: absolute;
+    bottom: 15%;
+    left: 20%;
+    right: 20%;
+ }
+ .container3 h1::before{
+     content: "Don't be busy, be productive";
+     
+ }
+ .container5 h1::before{
+    content: "If you do it right, it will last forever";
+      
+ }
+.container6 h1::before{
+    content: "less is more work";
+    
+ }
+ .container7 h1::before{
+    content: "we are born to create";
+    
+ }
+
+ .services{
+  display: flex;  
+  
+ }
+
+ .container4 {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(2,auto);
+    margin:0 5%;
+    
+ }
+.container4 .service{
+    display: flex;
+    color:var(--logo1-color);
+    border-bottom: solid 2px;
+    margin-top: 3%;
+}
+
+.service i{
+    color: var(--logo1-color);
+    margin: 2% 3% 0 0;
+    font-size:30px;
+}
+
+.service ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.image{
+    width:500px ;
+    position: relative;
+    margin-right: 10%;
+   
+}
+
+.services img{
+  width: 50%;
+  height:70%;
+  position: absolute;
+  right: 0;
+  top:calc((100% - 70%) / 2)
+   
+}
+
+.services .image::after{
+content: "";
+position: absolute;
+width: 20%;
+height:80% ;
+background-color: var(--logo1-color);
+right: -10%;
+top:calc((100% - 80%) / 2);
+z-index: -1;
+}
+
+
+.portfolio{
+    display:flex;
+    text-align: center;
+    position: relative;
+    color: var(--logo1-color);
+}
+
+.portfolio img {
+    width: 40%;
+}
+
+.portfolio h4 ,p{
+    padding: 0 5%;
+}
+
+.portfolio .portfolioImg::before{
+    content: "";
+    position: absolute;
+    filter: blur(50px);
+    background-color: var(--logo1-color);
+    height: 20%;
+    width: 10%;
+    transform: translate(15%,50%);
+    z-index: -1;
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.textabout{
+ position: relative;
+}
+
+.about .textabout{
+    width: 40%;
+    line-height: 1.6;
+    color: var(--logo1-color);
+   
+}
+
+.heading-about{
+    position: relative;
+}
+
+ .textabout .heading-about::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 2%;
+    background-color: var(--logo1-color);
+    bottom:-10%;
+    left:0;
+}
+
+.textabout p {
+   text-align: left;
+   font-weight: 300;
+   padding: 0;
+}
+
+.about .aboutimg {
+   position: relative;
+}
+
+.about .aboutimg img{
+    width: 60%;
+  
+}
+
+.about .aboutimg::before{
+    content:"";
+    position:absolute;
+    width: 15%;
+    height: 90%;
+    background-color: var(--logo1-color);
+    left: 53%;
+    top:-10%;
+    z-index: -1;
+
+}
+
+.about .aboutimg::after{
+    content:"";
+    position:absolute;
+    width: 20%;
+    height:23%;
+    background-color: var(--logo1-color);
+    right:15% ;
+    bottom: 20%;
+    z-index: -1;
+}
+
+.contact{
+    background-color: var(--background-color);
+}
+.contact h2{
+    padding-top:3%;
+
+}
+.contact h2,p,
+.contact .social{
+    color:var(--logo1-color);
+    text-align: center;
+}
+
+.contact .social{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
+    
+}
+
+.contact .social i{
+   color: var(--logo1-color);
+   font-size: 70% ;  
+
+}
+
+
+@media  (max-width: 600px){
+    .container2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    gap:5%;
+ }
+
+ .container4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    
+ }
+
+.services img{
+  width: 80%;
+  height:50%;
+  top:calc((100% - 50%) / 2)
+}
+
+.services .image::after{
+width: 40%;
+height:60% ;
+right: -20%;
+top:calc((100% - 60%) / 2);
+}
+
+.container3 h1,
+ .container5 h1,
+ .container6 h1,
+ .container7 h1{
+    font-size:100px;
+ }
+
+ .portfolio{
+    flex-direction: column;
+}
+
+.portfolio .portfolioImg::before{
+    
+    
+    
+    height: 12%;
+    width: 25%;
+    
+    transform: translate(25%,23%);
+    z-index: -1;
+}
+
+.textabout .heading-about::after{
+    height: 1%;
+    bottom:-3%;
+}
+
+}

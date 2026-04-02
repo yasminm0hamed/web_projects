@@ -1,0 +1,18 @@
+:root{
+    --logo1-color:rgb(74, 40, 18);
+    --main-color:rgb(174, 118, 50);
+    --shadow-color:rgba(163, 103, 29, 0.676);
+    --shadow-color2:rgba(138, 116, 89, 0.203);
+    --background-color:rgb(242, 233, 224);
+
+}
+*{
+    -webkik-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Work Sans",sans-serif;
+   height: 100vh;
+   
+}
